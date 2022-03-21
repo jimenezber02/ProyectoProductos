@@ -131,7 +131,7 @@ Class clase_creditos{
 		//Esta funcion registra los productos que se hayan pedido a la tabla "productos pedidos"
 		//en la posicon 7 del arreglo datos vienen todos los productos que se pidió
 		$band = 0;
-		$jsonDat = json_decode($data{'datos'},true);
+		$jsonDat = json_decode($data['datos']);
 		$i = 0;
 
 		while($i < count($jsonDat)){

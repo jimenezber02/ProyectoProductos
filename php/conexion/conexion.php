@@ -7,7 +7,7 @@
         private $tablaProdPed = "prod_pedidos";
 
         public function conectar(){
-            $conexion = mysqli_connect('localhost','root','','abarroteria_mary');
+            $conexion = mysqli_connect('localhost','root','','abarroteria');
 
             return $conexion;
         }

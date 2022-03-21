@@ -254,7 +254,6 @@ const envia_nuevoPP=()=>{
       url: '../php/creditos/nuevo_credito.php',
       data: objeto,
       success:function(r){
-        console.log(r);
         if(r == 1){
           $('#formNPC')[0].reset();
           $('#bo tr').each(function(index,item){

@@ -9,7 +9,7 @@
 			return $conexion;
 		}
 		public function creaDatabase($conexion){
-			$baseD = "abarroteria_mary";
+			$baseD = "abarroteria";
 			if(!empty($baseD)){
 				echo("</br>No existe la base, creando la base...");
 
@@ -21,7 +21,7 @@
 		}
 
 		public function table_created($conexion){
-			$_Nbase = "abarroteria_mary";
+			$_Nbase = "abarroteria";
 			$_tabla1 = "productos";
 			$tableD = "SELECT * FROM $_Nbase.$_tabla1";
 			if(mysqli_query($conexion,$tableD)==null){
@@ -42,7 +42,7 @@
 		}
 
 		public function tabla_clientes($conexion){
-			$_Nbase = "abarroteria_mary";
+			$_Nbase = "abarroteria";
 
 			$tableD ="SELECT * FROM $_Nbase.$this->dbClientes";
 			if(!mysqli_query($conexion,$tableD)){
@@ -65,7 +65,7 @@
 		}
 
 		public function cuenta_por_cobrar($conexion){
-			$_Nbase = "abarroteria_mary";
+			$_Nbase = "abarroteria";
 
 			$tableD ="SELECT * FROM $_Nbase.$this->dbCxc";
 			if(!mysqli_query($conexion,$tableD)){
@@ -87,7 +87,7 @@
 			}
 		}
 		public function pedidos($conexion){
-			$_Nbase = "abarroteria_mary";
+			$_Nbase = "abarroteria";
 			$_tabla1 = "pedidos";
 			$tableD ="SELECT * FROM $_Nbase.$_tabla1";
 			if(!mysqli_query($conexion,$tableD)){
@@ -116,7 +116,7 @@
 			}
 		}
 		public function productos_pedidos($conexion){
-			$_Nbase = "abarroteria_mary";
+			$_Nbase = "abarroteria";
 			$_tabla1 = "prod_pedidos";
 			$tableD ="SELECT * FROM $_Nbase.$_tabla1";
 			if(!mysqli_query($conexion,$tableD)){
@@ -143,7 +143,7 @@
 		}
 
 		public function crea_table_categorias($conexion){
-			$_Nbase = "abarroteria_mary";
+			$_Nbase = "abarroteria";
 			$_tabla1 = "categoria_producto";
 			$tableD = "SELECT * FROM $_Nbase.$_tabla1";
 			if(!mysqli_query($conexion,$tableD)){
@@ -160,7 +160,7 @@
 		}
 
 		public function inserta_tabla_categorias($conexion){
-			$_Nbase = "abarroteria_mary";
+			$_Nbase = "abarroteria";
 			$_tabla1 = "categoria_producto";
 			$tableD = "SELECT * FROM $_Nbase.$_tabla1";
 			if(mysqli_query($conexion,$tableD)){
@@ -190,7 +190,7 @@
 		}
 
 		public function tabla_cuenta_anterior($conexion){
-			$baseD = "abarroteria_mary";
+			$baseD = "abarroteria";
 			$nameTable = "deuda_anteriores";
 			$sentencia = "CREATE TABLE $baseD.$nameTable(
 				id int(5) NOT NULL AUTO_INCREMENT,
@@ -205,7 +205,7 @@
 		}
 
 		public function tabla_bonos_saldos($conexion){
-			$baseD = "abarroteria_mary";
+			$baseD = "abarroteria";
 			$nameTable = "saldos";
 			$sentencia = "CREATE TABLE $baseD.$nameTable(
 				id int(5) NOT NULL AUTO_INCREMENT,
