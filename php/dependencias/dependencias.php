@@ -1,5 +1,6 @@
   <!--Dependencias css-->
   <link rel="stylesheet" href="../../librerias/bootstrap-5.1.3/bootstrap/css/bootstrap.css">
+  
   <!-- Data table 5 -->
   <!--<link rel="stylesheet" href="../librerias/dataTableB5/DataTables-1.12.1/css/dataTables.bootstrap.css">-->
   <link rel="stylesheet" href="../../librerias/dataTableB5/datatables.min.css">
