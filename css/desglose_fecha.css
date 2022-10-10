@@ -1,0 +1,15 @@
+#datatableDF tr td{
+ text-align: center;
+}
+
+#datatableDF thead:nth-child(1) td{
+ background-color: rgb(41, 52, 98);
+}
+
+#datatableDF thead:nth-child(2) td{
+ background-color: rgb(73, 92, 131);
+}
+
+.borderTr{
+  border-color: #ccc;
+}

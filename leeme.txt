@@ -1,0 +1,2 @@
+el archivo presente en esta carpeta "sql.sql" crea la base de datos y las tablas
+el archivo conexion está configurado para ejecutarse en localhost
